@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  NombreVacuna: MyString
+  Paciente: MyString
+  Dueno: MyString
+  Telefono: MyString
+  Direccion: MyString
+  FechaRegistro: 2012-07-23
+
+two:
+  NombreVacuna: MyString
+  Paciente: MyString
+  Dueno: MyString
+  Telefono: MyString
+  Direccion: MyString
+  FechaRegistro: 2012-07-23

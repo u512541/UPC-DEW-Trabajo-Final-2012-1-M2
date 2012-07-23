@@ -1,0 +1,33 @@
+<h1>Listing cita</h1>
+
+<table>
+  <tr>
+    <th>Nombrevacuna</th>
+    <th>Paciente</th>
+    <th>Dueno</th>
+    <th>Telefono</th>
+    <th>Direccion</th>
+    <th>Fecharegistro</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @cita.each do |citum| %>
+  <tr>
+    <td><%= citum.NombreVacuna %></td>
+    <td><%= citum.Paciente %></td>
+    <td><%= citum.Dueno %></td>
+    <td><%= citum.Telefono %></td>
+    <td><%= citum.Direccion %></td>
+    <td><%= citum.FechaRegistro %></td>
+    <td><%= link_to 'Show', citum %></td>
+    <td><%= link_to 'Edit', edit_citum_path(citum) %></td>
+    <td><%= link_to 'Destroy', citum, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Citum', new_citum_path %>

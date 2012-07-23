@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Dueno: MyString
+  Especie: MyString
+  Raza: MyString
+  Genero: MyString
+  TipoSangre: MyString
+  Esterilizado: MyString
+  Tamano: MyString
+  Actividad: MyString
+  Peso: 9.99
+  FechaNacimiento: 2012-07-23
+
+two:
+  Dueno: MyString
+  Especie: MyString
+  Raza: MyString
+  Genero: MyString
+  TipoSangre: MyString
+  Esterilizado: MyString
+  Tamano: MyString
+  Actividad: MyString
+  Peso: 9.99
+  FechaNacimiento: 2012-07-23
