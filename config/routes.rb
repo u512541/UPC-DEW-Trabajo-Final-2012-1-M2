@@ -1,6 +1,11 @@
 UPCDewTrabajoFinal20121M2::Application.routes.draw do
+<<<<<<< HEAD
+  
+  
+=======
   resources :cliente_pacientes
 
+>>>>>>> bcd5c8344d80f456c0767dcc2453d66a477e47f7
   resources :cita
 
   resources :pacientes
