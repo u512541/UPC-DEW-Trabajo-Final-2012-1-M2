@@ -1,4 +1,6 @@
 UPCDewTrabajoFinal20121M2::Application.routes.draw do
+  
+  
   resources :cita
 
   resources :pacientes
