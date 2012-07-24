@@ -1,241 +1,152 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
+<!--  Website template by freewebsitetemplates.com  -->
 <html>
-  <head>
-    <title>Ruby on Rails: Welcome aboard</title>
-    <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-      }
 
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
+<head>
+	<title>Veterinaria Pet Shop</title>
+	<meta  charset=iso-8859-1" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!--[if IE 6]>
+		<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<!--[if IE 7]>
+        <link href="css/ie7.css" rel="stylesheet" type="text/css" />  
+	<![endif]-->
+</head>
 
-      a  {color: #03c}
-      a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-      }
+<body>
 
-
-      #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 175px;
-      }
-
-      #footer {
-        clear: both;
-      }
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-        background-image: url("assets/rails.png");
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-
-      .filename {
-        font-style: italic;
-      }
-    </style>
-    <script type="text/javascript">
-      function about() {
-        info = document.getElementById('about-content');
-        if (window.XMLHttpRequest)
-          { xhr = new XMLHttpRequest(); }
-        else
-          { xhr = new ActiveXObject("Microsoft.XMLHTTP"); }
-        xhr.open("GET","rails/info/properties",false);
-        xhr.send("");
-        info.innerHTML = xhr.responseText;
-        info.style.display = 'block'
-      }
-    </script>
-  </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Browse the documentation</h3>
-            <ul class="links">
-              <li><a href="http://guides.rubyonrails.org/">Rails Guides</a></li>
-              <li><a href="http://api.rubyonrails.org/">Rails API</a></li>
-              <li><a href="http://www.ruby-doc.org/core/">Ruby core</a></li>
-              <li><a href="http://www.ruby-doc.org/stdlib/">Ruby standard library</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Welcome aboard</h1>
-          <h2>You&rsquo;re riding Ruby on Rails!</h2>
-        </div>
-
-        <div id="about">
-          <h3><a href="rails/info/properties" onclick="about(); return false">About your application&rsquo;s environment</a></h3>
-          <div id="about-content" style="display: none"></div>
-        </div>
-
-        <div id="getting-started">
-          <h1>Getting started</h1>
-          <h2>Here&rsquo;s how to get rolling:</h2>
-
-          <ol>
-            <li>
-              <h2>Use <code>rails generate</code> to create your models and controllers</h2>
-              <p>To see all available options, run it without parameters.</p>
-            </li>
-
-            <li>
-              <h2>Set up a default route and remove <span class="filename">public/index.html</span></h2>
-              <p>Routes are set up in <span class="filename">config/routes.rb</span>.</p>
-            </li>
-
-            <li>
-              <h2>Create your database</h2>
-              <p>Run <code>rake db:create</code> to create your database. If you're not using SQLite (the default), edit <span class="filename">config/database.yml</span> with your username and password.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-
-      <div id="footer">&nbsp;</div>
-    </div>
-  </body>
+	  
+			<div id="header">
+	           		<a href="index.html" id="logo"><img src="images/logo.gif" width="310" height="114" alt="" title=""></a>
+					<ul class="navigation">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="petmart.html">PetMart</a></li>
+						<li><a href="about.html">About us</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="petguide.html">PetGuide</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+					</ul>
+			</div>
+			
+			<div id="body">
+			
+					<div class="banner">&nbsp;</div>
+					
+			       <div id="content">
+				   
+				        <div class="content">
+								<ul>
+									<li>
+										<a href="index.html"><img src="images/puppy.jpg" width="114" height="160" alt="Pet Shop" title="Pet Shop"></a>
+										<h2>What they need</h2>
+										<p>Mirum est notare quam littera gothica, quam nunc putamus parum clara m, ant epo suerit li tterar. <a class="more" href="index.html">View all</a></p>
+									</li>
+									<li>
+										<a href="index.html"><img src="images/cat.jpg" width="114" height="160" alt="Pet Shop" title="Pet Shop"></a>
+										<h2>Something good</h2>
+										<p>Gothica, quam nun c putamus parum claram, anteposuerit litterarum formas humani tatis per seacula. <a class="more" href="index.html">View all</a></p>
+									</li>
+									<li>
+										<a href="index.html"><img src="images/koi.jpg" width="114" height="160" alt="Pet Shop" title="Pet Shop"></a>
+										<h2>Kinds of Fish</h2>
+										<p>Quam nunc putamus parum claram, antep osuerit litter arum formas humanitatis per seacula quarta. <a class="more" href="index.html">View all</a></p>
+									</li>
+									<li>
+										<a href="index.html"><img src="images/bird.jpg" width="114" height="160" alt="Pet Shop" title="Pet Shop"></a>
+										<h2>Fun birds</h2>
+										<p>Mirum est notare quam littera gothica , quam nunc putamus parum claram, anteposuerit. <a class="more" href="index.html">View all</a></p>
+									</li>
+								</ul>
+						</div>
+						
+					    <div id="sidebar">
+								<div class="search">
+									<input type="text" name="s" value="Find"><button>&nbsp;</button>
+									<label for="articles"><input type="radio" id="articles"> Articles</label>
+									<label for="products"><input type="radio" id="products" checked> PetMart Products</label>
+								</div>
+								
+                                <div class="section"> 								
+									<ul class="navigation">
+										<li class="active"><a href="index.html">Shopping Guides</a></li>
+										<li><a href="index.html">Discounted Items</a></li>
+									</ul>
+									
+									<div class="aside">
+									 <div>
+										<div>
+											 <ul>
+												<li><a href="index.html">Pet Accesories </a> <a class="more" href="index.html">see all</a></li>
+												<li><a href="index.html">Bath Essentials</a> <a class="more" href="index.html">see all</a></li>
+												<li><a href="index.html">Pet Food</a> <a class="more" href="index.html">see all</a></li>
+												<li><a href="index.html">Pet Vitamins</a> <a class="more" href="index.html">see all</a></li>
+												<li><a href="index.html">Pet Needs</a> <a class="more" href="index.html">see all</a></li>
+												<li><a href="index.html">Pet Toy and Treats</a> <a class="more" href="index.html">see all</a></li>
+												<li><a href="index.html">Pet Supplies</a> <a class="more" href="index.html">see all</a></li>
+												<li><a href="index.html">Pet Emergency Kit</a> <a class="more" href="index.html">see all</a></li>
+											 </ul>
+										</div>
+									 </div>
+									</div>
+								</div>
+								
+					    </div>
+				   </div>
+				   
+				   <div class="featured">
+				        <ul>
+							<li><a href="index.html"><img src="images/organic-and-chemical-free.jpg" width="300" height="90" alt="Pet Shop" title="Pet Shop" ></a></li>
+							<li><a href="index.html"><img src="images/good-food.jpg" width="300" height="90" alt="Pet Shop" title="Pet Shop" ></a></li>
+							<li class="last"><a href="index.html"><img src="images/pet-grooming.jpg" width="300" height="90" alt="Pet Shop" title="Pet Shop" ></a></li>
+						</ul>
+				        
+				   </div>
+				  
+			
+			</div>
+			
+			<div id="footer">
+			        <div class="section">
+						<ul>
+							<li>
+								<img src="images/friendly-pets.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+								<h2><a href="index.html">Friendly Pets</a></h2>
+								<p>
+								   Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonummy nib. <a class="more" href="index.html">Read More</a> 
+								</p>
+							</li>	
+							<li>
+								<img src="images/pet-lover2.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+								<h2><a href="index.html">How dangerous are they</a></h2>
+								<p>
+								   Lorem ipsum dolor sit amet, cons ectetuer adepis cing, sed diam euis. <a class="more" href="index.html">Read More</a> 
+								</p>
+							</li>	
+							<li>
+								<img src="images/healthy-dog.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+								<h2><a href="index.html">Keep them healthy</a></h2>
+								<p>
+								   Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diam nonu mmy. <a class="more" href="index.html">Read More</a> 
+								</p>
+							</li>	
+							<li>
+								
+								<h2><a href="index.html">Love...love...love...pets</a></h2>
+								<p>
+								     Lorem ipsum dolor sit amet, consectetuer adepiscing elit,  sed diameusim. <a class="more" href="index.html">Read More</a> 
+								</p>
+								<img src="images/pet-lover.jpg" width="240" height="186" alt="Pet Shop" title="Pet Shop">
+							</li>	
+						</ul>
+					</div>
+					<div id="footnote">
+						<div class="section">
+						   &copy; 2011 <a href="index.html">Petshop</a>. All Rights Reserved.
+						</div>
+					</div>
+			</div>
+			
+	
+</body>
 </html>
