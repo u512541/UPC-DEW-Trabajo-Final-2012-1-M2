@@ -2,11 +2,7 @@
  body { 
             margin:0;
 			padding:0;
-<<<<<<< HEAD
 			background: url("../images/bg-body.gif");
-=======
-			background: url("assets/images/bg-body.gif");
->>>>>>> 3bc5a8b4f6d04ad9787f4cb52d308861fa9fe477
 			background-repeat:repeat-x;
 	}
 	
