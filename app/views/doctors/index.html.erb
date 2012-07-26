@@ -1,12 +1,12 @@
-<h1>Listing doctors</h1>
+<h1>Listando Doctores</h1>
 
 <table>
   <tr>
-    <th>Nombreapellido</th>
+    <th>Nombre y Apellido</th>
     <th>Administrador</th>
     <th>Email</th>
     <th>Telefono</th>
-    <th>Usuariosistema</th>
+    <th>Usuario del Sistema</th>
     <th></th>
     <th></th>
     <th></th>
@@ -19,13 +19,13 @@
     <td><%= doctor.Email %></td>
     <td><%= doctor.Telefono %></td>
     <td><%= doctor.UsuarioSistema %></td>
-    <td><%= link_to 'Show', doctor %></td>
-    <td><%= link_to 'Edit', edit_doctor_path(doctor) %></td>
-    <td><%= link_to 'Destroy', doctor, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Visualizar', doctor %></td>
+    <td><%= link_to 'Editar', edit_doctor_path(doctor) %></td>
+    <td><%= link_to 'Eliminar', doctor, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Doctor', new_doctor_path %>
+<%= link_to 'Nuevo Doctor', new_doctor_path %>
