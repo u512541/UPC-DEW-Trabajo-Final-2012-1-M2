@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120724045921) do
+ActiveRecord::Schema.define(:version => 20120808071907) do
 
   create_table "cita", :force => true do |t|
     t.string   "NombreVacuna"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20120724045921) do
     t.string   "Celular"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.text     "notas"
   end
 
   create_table "doctors", :force => true do |t|
@@ -63,8 +64,11 @@ ActiveRecord::Schema.define(:version => 20120724045921) do
     t.string   "Actividad"
     t.decimal  "Peso"
     t.date     "FechaNacimiento"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+    t.text     "NotasMedicas"
+    t.string   "ImagenesMedicas"
+    t.text     "CondicionesEspeciales"
   end
 
   create_table "prospectos", :force => true do |t|
@@ -76,6 +80,16 @@ ActiveRecord::Schema.define(:version => 20120724045921) do
     t.string   "Celular"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "auth_token"
+    t.string   "password_reset_token"
+    t.datetime "password_reset_sent_at"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
   end
 
 end
