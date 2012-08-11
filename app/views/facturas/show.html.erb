@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dueno:</b>
+  <%= @factura.Dueno %>
+</p>
+
+<p>
+  <b>Paciente:</b>
+  <%= @factura.Paciente %>
+</p>
+
+<p>
+  <b>Ruc:</b>
+  <%= @factura.Ruc %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%= @factura.Direccion %>
+</p>
+
+<p>
+  <b>Fecharegistro:</b>
+  <%= @factura.FechaRegistro %>
+</p>
+
+<p>
+  <b>Montototal:</b>
+  <%= @factura.MontoTotal %>
+</p>
+
+
+<%= link_to 'Edit', edit_factura_path(@factura) %> |
+<%= link_to 'Back', facturas_path %>

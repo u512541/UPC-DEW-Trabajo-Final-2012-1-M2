@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../assets/ie.css" type="text/css">
+        <link rel="stylesheet" href="../assets/print.css" type="text/css">
+        <link rel="stylesheet" href="../assets/screen.css" type="text/css">
+        <link rel="stylesheet" href="../assets/styles.css" type="text/css">
+		<script src="../assets/SpryTabbedPanels.js" type="text/javascript"></script>
+		<link href=../"assets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+        <script language="JavaScript" src="../assets/scripts.js"></script>
+        <title>Veterinaria Petshop</title>
+    </head>
+    <body>
+        <div class="container-page">
+
+            <!-- Inicio Cabecera del Sistema -->
+            <div id="encabezado" class="span-24 last">				
+                <div id="logo" class="span-24 last">
+                    <img src="../assets/logo1.gif" />
+                </div>
+                <!--div id="aplicacion" class="span-7 last">
+                    Nombre de la Aplicaci&oacute;n
+                </div-->
+                				
+            </div>
+            <!-- Fin Cabecera del Sistema -->
+
+			<!-- Inicio Menu del Sistema -->
+				<!--div class="span-24 last">
+					<div id="TabbedPanels1" class="TabbedPanels">
+					  <ul class="TabbedPanelsTabGroup">
+						<li class="TabbedPanelsTab" tabindex="0">
+							<a href="#">Citas de Vacunas y Tareas</a>
+						</li>
+					  <li class="TabbedPanelsTab" tabindex="0"><a href="#" onclick="javascript:pacientes();">Pacientes</a></li>
+						<li class="TabbedPanelsTab"  tabindex="0"><a href="#" onclick="javascript:clientes();">Clientes</a></li>
+						<li class="TabbedPanelsTab" tabindex="0"><a href="#" onclick="javascript:prospectos();">Prospectos</a></li>
+						<li class="TabbedPanelsTab" tabindex="0"><a href="#" onclick="javascript:doctores();">Doctores</a></li>
+						<li class="TabbedPanelsTab" tabindex="0"><a href="#" onclick="javascript:usuarios();">Usuarios</a></li>
+									  </ul>
+					  <div class="TabbedPanelsContentGroup">
+						&nbsp;
+						<div class="TabbedPanelsContent" style="display: none; ">
+						&nbsp;
+						</div>
+						<div class="TabbedPanelsContent" style="display: none; ">
+							&nbsp;
+						</div>
+						<div class="TabbedPanelsContent" style="display: none; ">
+							&nbsp;
+						</div>
+						<div class="TabbedPanelsContent" style="display: none; ">
+							&nbsp;
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="span-24 last">
+					<ul class="menu-3">
+						<li><%= link_to 'Nuevo Usuario', new_user_path %></li> 
+						
+					</ul>
+				</div-->
+				<div class="span-24 last">
+					<div class="barra-menu span-24 last">
+						<ul class="menu-1">
+							<li><a href="/vaccines/index">Citas de Vacunas y Tareas</a></li>
+							<li><a href="/patients/index">Pacientes</a></li>
+							<li><a href="/customers/index">Clientes</a></li>
+							<li><a href="/prospectus/index">Prospectos</a></li>
+							<li><a href="/doctors/index">Doctores</a></li>
+							<li class="active"><a href="/users/index">Usuarios</a></li>
+						</ul>
+						<div class="menu-2 span-24 last">
+							<div class="span-16 active">
+								<%= link_to 'Nuevo Usuario', new_user_path %>
+							</div>
+							<div id="usuario" class="span-8 last">
+								<a href="#">Cerrar Sessi&oacute;n</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            <!-- Fin Menu del Sistema -->
+			
+            <!-- Inicio Cuerpo de la Pagina -->
+       
+				<p id="notice"><%= notice %></p>
+
+				<p>
+				  <b>Nombre:</b>
+				  <%= @user.email %>
+				</p>
+
+				<p>
+				  <b>Apellido:</b>
+				  <%= @user.email %>
+				</p>
+
+				<p>
+				  <b>Email:</b>
+				  <%= @user.email %>
+				</p>
+
+				<p>
+				  <b>Telefono:</b>
+				  <%= @user.email %>
+				</p>
+
+				<p>
+				  <b>Usuario:</b>
+				  <%= @user.email %>
+				</p>
+
+
+				<%= link_to 'Edicion', edit_user_path(@user) %> |
+				<%= link_to 'Regresar', users_path %>
+
+			<!--script type="text/javascript">
+			var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+			
+			  </script-->
+            <!-- Fin Cuerpo de la Pagina -->
+
+            <!-- Inicio Pie del Sistema --> 
+            <div id="pie" class="span-24 last">
+                Derechos Reservados
+            </div>
+            <!-- Fin Pie del Sistema --> 
+        </div>
+    </body>
+</html>

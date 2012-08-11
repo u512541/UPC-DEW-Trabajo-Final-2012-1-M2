@@ -1,0 +1,2 @@
+class ClienteFacturasController < ApplicationController
+end

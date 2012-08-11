@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Cliente_id: 1
+  Cita_id: 1
+
+two:
+  Cliente_id: 1
+  Cita_id: 1

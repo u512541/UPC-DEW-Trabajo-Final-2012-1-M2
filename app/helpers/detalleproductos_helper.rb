@@ -1,0 +1,2 @@
+module DetalleproductosHelper
+end

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Factura:</b>
+  <%= @detalleproducto.factura %>
+</p>
+
+<p>
+  <b>Producto:</b>
+  <%= @detalleproducto.Producto %>
+</p>
+
+<p>
+  <b>Cantidad:</b>
+  <%= @detalleproducto.Cantidad %>
+</p>
+
+<p>
+  <b>Total:</b>
+  <%= @detalleproducto.Total %>
+</p>
+
+
+<%= link_to 'Edit', edit_detalleproducto_path(@detalleproducto) %> |
+<%= link_to 'Back', detalleproductos_path %>

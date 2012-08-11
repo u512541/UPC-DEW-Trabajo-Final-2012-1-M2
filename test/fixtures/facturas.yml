@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Dueno: MyString
+  Paciente: MyString
+  Ruc: MyString
+  Direccion: MyString
+  FechaRegistro: 2012-08-11
+  MontoTotal: 9.99
+
+two:
+  Dueno: MyString
+  Paciente: MyString
+  Ruc: MyString
+  Direccion: MyString
+  FechaRegistro: 2012-08-11
+  MontoTotal: 9.99

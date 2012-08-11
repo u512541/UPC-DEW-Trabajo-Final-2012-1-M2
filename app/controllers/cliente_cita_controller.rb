@@ -1,0 +1,2 @@
+class ClienteCitaController < ApplicationController
+end

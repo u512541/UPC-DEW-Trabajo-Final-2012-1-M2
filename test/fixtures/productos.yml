@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Codigo: MyString
+  Detalle: MyString
+  Precio: 9.99
+
+two:
+  Codigo: MyString
+  Detalle: MyString
+  Precio: 9.99

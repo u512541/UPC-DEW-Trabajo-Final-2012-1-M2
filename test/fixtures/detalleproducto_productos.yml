@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Detalleproducto_id: 1
+  Producto_id: 1
+
+two:
+  Detalleproducto_id: 1
+  Producto_id: 1

@@ -1,0 +1,29 @@
+<h1>Listing detalleproductos</h1>
+
+<table>
+  <tr>
+    <th>Factura</th>
+    <th>Producto</th>
+    <th>Cantidad</th>
+    <th>Total</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @detalleproductos.each do |detalleproducto| %>
+  <tr>
+    <td><%= detalleproducto.factura %></td>
+    <td><%= detalleproducto.Producto %></td>
+    <td><%= detalleproducto.Cantidad %></td>
+    <td><%= detalleproducto.Total %></td>
+    <td><%= link_to 'Show', detalleproducto %></td>
+    <td><%= link_to 'Edit', edit_detalleproducto_path(detalleproducto) %></td>
+    <td><%= link_to 'Destroy', detalleproducto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Detalleproducto', new_detalleproducto_path %>

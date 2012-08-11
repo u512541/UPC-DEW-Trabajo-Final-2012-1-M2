@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="../assets/ie.css" type="text/css">
+        <link rel="stylesheet" href="../assets/print.css" type="text/css">
+        <link rel="stylesheet" href="../assets/screen.css" type="text/css">
+        <link rel="stylesheet" href="../assets/styles.css" type="text/css">
+		<script src="../assets/SpryTabbedPanels.js" type="text/javascript"></script>
+		<link href="../assets/SpryTabbedPanels.css" rel="stylesheet" type="text/css">
+        <script language="JavaScript" src="../assets/scripts.js"></script>
+        <title>Veterinaria Petshop</title>
+    </head>
+    <body>
+        <div class="container-page">
+
+            <!-- Inicio Cabecera del Sistema -->
+            <div id="encabezado" class="span-24 last">				
+                <div id="logo1" class="span-24 last">
+                    <img src="../assets/logo1.gif" />
+                </div>
+                <!--div id="aplicacion" class="span-7 last">
+                    Nombre de la Aplicaci&oacute;n
+                </div-->
+                				
+            </div>
+            <!-- Fin Cabecera del Sistema -->
+
+			<!-- Inicio Menu del Sistema -->
+				
+				<div class="span-24 last">
+					<div class="barra-menu span-24 last">
+						<ul class="menu-1">
+							<li class="active"><a href="/users">Usuarios</a></li>
+						</ul>
+						<div class="menu-2 span-24 last">
+							<div class="span-16 active">
+								<%= link_to 'Nuevo Usuario', new_user_path %>
+							</div>
+							<div id="usuario" class="span-8 last">
+								<a href="/">Cerrar Sessi&oacute;n</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            <!-- Fin Menu del Sistema -->
+			
+            <!-- Inicio Cuerpo de la Pagina -->
+            <div class="span-24 last">
+				<h3>Nuevo Usuario</h3>
+			</div>
+			<%= form_for(@user) do |f| %>
+			  <% if @user.errors.any? %>
+				<div id="error_explanation">
+				  <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+				  <ul>
+				  <% @user.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				  <% end %>
+				  </ul>
+				</div>
+			  <% end %>
+
+			  <div class="field">
+				<%= f.label :email %><br />
+				<%= f.text_field :email %>
+			  </div>
+			  <div class="actions">
+				<%= f.submit %>
+			  </div>
+			<% end %>
+	
+			<!--script type="text/javascript">
+			var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+			
+			  </script-->
+            <!-- Fin Cuerpo de la Pagina -->
+
+            <!-- Inicio Pie del Sistema --> 
+            <div id="pie" class="span-24 last">
+                Derechos Reservados
+            </div>
+            <!-- Fin Pie del Sistema --> 
+        </div>
+    </body>
+</html>
+
+
+
