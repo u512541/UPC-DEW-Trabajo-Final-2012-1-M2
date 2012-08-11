@@ -18,7 +18,7 @@ class CitaControllerTest < ActionController::TestCase
 
   test "should create citum" do
     assert_difference('Citum.count') do
-      post :create, citum: @citum.attributes
+      post :create, citum: { CitaTarea: @citum.CitaTarea, Direccion: @citum.Direccion, Dueno: @citum.Dueno, FechaRegistro: @citum.FechaRegistro, NombreVacuna: @citum.NombreVacuna, Paciente: @citum.Paciente, Telefono: @citum.Telefono }
     end
 
     assert_redirected_to citum_path(assigns(:citum))
@@ -35,7 +35,7 @@ class CitaControllerTest < ActionController::TestCase
   end
 
   test "should update citum" do
-    put :update, id: @citum, citum: @citum.attributes
+    put :update, id: @citum, citum: { CitaTarea: @citum.CitaTarea, Direccion: @citum.Direccion, Dueno: @citum.Dueno, FechaRegistro: @citum.FechaRegistro, NombreVacuna: @citum.NombreVacuna, Paciente: @citum.Paciente, Telefono: @citum.Telefono }
     assert_redirected_to citum_path(assigns(:citum))
   end
 

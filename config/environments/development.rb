@@ -1,4 +1,4 @@
-UPCDewTrabajoFinal20121M2::Application.configure do
+Veterinaria::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on

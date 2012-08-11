@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120808071907) do
+ActiveRecord::Schema.define(:version => 20120811152632) do
 
   create_table "cita", :force => true do |t|
     t.string   "NombreVacuna"
@@ -20,8 +20,23 @@ ActiveRecord::Schema.define(:version => 20120808071907) do
     t.string   "Telefono"
     t.string   "Direccion"
     t.date     "FechaRegistro"
+    t.string   "CitaTarea"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "cliente_cita", :force => true do |t|
+    t.integer  "Cliente_id"
+    t.integer  "Cita_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "cliente_facturas", :force => true do |t|
+    t.integer  "Cliente_id"
+    t.integer  "Factura_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "cliente_pacientes", :force => true do |t|
@@ -38,19 +53,72 @@ ActiveRecord::Schema.define(:version => 20120808071907) do
     t.string   "Imagen"
     t.string   "Telefono"
     t.string   "Celular"
+    t.text     "Notas"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.text     "notas"
+  end
+
+  create_table "detalleproducto_productos", :force => true do |t|
+    t.integer  "Detalleproducto_id"
+    t.integer  "Producto_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "detalleproductos", :force => true do |t|
+    t.string   "factura"
+    t.string   "Producto"
+    t.integer  "Cantidad"
+    t.decimal  "Total"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "doctors", :force => true do |t|
     t.string   "NombreApellido"
-    t.string   "Administrador"
     t.string   "Email"
     t.string   "Telefono"
     t.string   "UsuarioSistema"
+    t.string   "Administrador"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "factura_detalleproductos", :force => true do |t|
+    t.integer  "Factura_id"
+    t.integer  "Detalleproducto_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  create_table "facturas", :force => true do |t|
+    t.string   "Dueno"
+    t.string   "Paciente"
+    t.string   "Ruc"
+    t.string   "Direccion"
+    t.date     "FechaRegistro"
+    t.decimal  "MontoTotal"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "mains", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "paciente_cita", :force => true do |t|
+    t.integer  "Paciente_id"
+    t.integer  "Cita_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "paciente_doctors", :force => true do |t|
+    t.integer  "Paciente_id"
+    t.integer  "Doctor_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "pacientes", :force => true do |t|
@@ -62,13 +130,21 @@ ActiveRecord::Schema.define(:version => 20120808071907) do
     t.string   "Esterilizado"
     t.string   "Tamano"
     t.string   "Actividad"
-    t.decimal  "Peso"
+    t.decimal  "Pesokg"
     t.date     "FechaNacimiento"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
     t.text     "NotasMedicas"
     t.string   "ImagenesMedicas"
     t.text     "CondicionesEspeciales"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
+
+  create_table "productos", :force => true do |t|
+    t.string   "Codigo"
+    t.string   "Detalle"
+    t.decimal  "Precio"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "prospectos", :force => true do |t|

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-UPCDewTrabajoFinal20121M2::Application.load_tasks
+Veterinaria::Application.load_tasks

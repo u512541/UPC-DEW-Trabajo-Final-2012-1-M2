@@ -18,7 +18,7 @@ class ProspectosControllerTest < ActionController::TestCase
 
   test "should create prospecto" do
     assert_difference('Prospecto.count') do
-      post :create, prospecto: @prospecto.attributes
+      post :create, prospecto: { Celular: @prospecto.Celular, Direccion: @prospecto.Direccion, Email: @prospecto.Email, Imagen: @prospecto.Imagen, Nombre: @prospecto.Nombre, Telefono: @prospecto.Telefono }
     end
 
     assert_redirected_to prospecto_path(assigns(:prospecto))
@@ -35,7 +35,7 @@ class ProspectosControllerTest < ActionController::TestCase
   end
 
   test "should update prospecto" do
-    put :update, id: @prospecto, prospecto: @prospecto.attributes
+    put :update, id: @prospecto, prospecto: { Celular: @prospecto.Celular, Direccion: @prospecto.Direccion, Email: @prospecto.Email, Imagen: @prospecto.Imagen, Nombre: @prospecto.Nombre, Telefono: @prospecto.Telefono }
     assert_redirected_to prospecto_path(assigns(:prospecto))
   end
 

@@ -7,6 +7,7 @@ one:
   Imagen: MyString
   Telefono: MyString
   Celular: MyString
+  Notas: MyText
 
 two:
   Nombre: MyString
@@ -15,3 +16,4 @@ two:
   Imagen: MyString
   Telefono: MyString
   Celular: MyString
+  Notas: MyText

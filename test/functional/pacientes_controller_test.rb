@@ -18,7 +18,7 @@ class PacientesControllerTest < ActionController::TestCase
 
   test "should create paciente" do
     assert_difference('Paciente.count') do
-      post :create, paciente: @paciente.attributes
+      post :create, paciente: { Actividad: @paciente.Actividad, CondicionesEspeciales: @paciente.CondicionesEspeciales, Dueno: @paciente.Dueno, Especie: @paciente.Especie, Esterilizado: @paciente.Esterilizado, FechaNacimiento: @paciente.FechaNacimiento, Genero: @paciente.Genero, ImagenesMedicas: @paciente.ImagenesMedicas, NotasMedicas: @paciente.NotasMedicas, Pesokg: @paciente.Pesokg, Raza: @paciente.Raza, Tamano: @paciente.Tamano, TipoSangre: @paciente.TipoSangre }
     end
 
     assert_redirected_to paciente_path(assigns(:paciente))
@@ -35,7 +35,7 @@ class PacientesControllerTest < ActionController::TestCase
   end
 
   test "should update paciente" do
-    put :update, id: @paciente, paciente: @paciente.attributes
+    put :update, id: @paciente, paciente: { Actividad: @paciente.Actividad, CondicionesEspeciales: @paciente.CondicionesEspeciales, Dueno: @paciente.Dueno, Especie: @paciente.Especie, Esterilizado: @paciente.Esterilizado, FechaNacimiento: @paciente.FechaNacimiento, Genero: @paciente.Genero, ImagenesMedicas: @paciente.ImagenesMedicas, NotasMedicas: @paciente.NotasMedicas, Pesokg: @paciente.Pesokg, Raza: @paciente.Raza, Tamano: @paciente.Tamano, TipoSangre: @paciente.TipoSangre }
     assert_redirected_to paciente_path(assigns(:paciente))
   end
 

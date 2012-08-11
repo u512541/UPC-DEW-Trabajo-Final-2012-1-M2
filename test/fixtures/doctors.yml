@@ -2,14 +2,14 @@
 
 one:
   NombreApellido: MyString
-  Administrador: MyString
   Email: MyString
   Telefono: MyString
   UsuarioSistema: MyString
+  Administrador: MyString
 
 two:
   NombreApellido: MyString
-  Administrador: MyString
   Email: MyString
   Telefono: MyString
   UsuarioSistema: MyString
+  Administrador: MyString

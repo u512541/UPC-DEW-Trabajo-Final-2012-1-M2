@@ -1,4 +1,4 @@
-<h1>Listar Pacientes</h1>
+<h1>Listing pacientes</h1>
 
 <table>
   <tr>
@@ -6,12 +6,15 @@
     <th>Especie</th>
     <th>Raza</th>
     <th>Genero</th>
-    <th>Tipo de Sangre</th>
+    <th>Tiposangre</th>
     <th>Esterilizado</th>
     <th>Tamano</th>
     <th>Actividad</th>
-    <th>Peso</th>
-    <th>Fecha de Nacimiento</th>
+    <th>Pesokg</th>
+    <th>Fechanacimiento</th>
+    <th>Notasmedicas</th>
+    <th>Imagenesmedicas</th>
+    <th>Condicionesespeciales</th>
     <th></th>
     <th></th>
     <th></th>
@@ -27,15 +30,18 @@
     <td><%= paciente.Esterilizado %></td>
     <td><%= paciente.Tamano %></td>
     <td><%= paciente.Actividad %></td>
-    <td><%= paciente.Peso %></td>
+    <td><%= paciente.Pesokg %></td>
     <td><%= paciente.FechaNacimiento %></td>
-    <td><%= link_to 'Visualizar', paciente %></td>
-    <td><%= link_to 'Editar', edit_paciente_path(paciente) %></td>
-    <td><%= link_to 'Eliminar', paciente, confirm: 'Estas tu seguro?', method: :delete %></td>
+    <td><%= paciente.NotasMedicas %></td>
+    <td><%= paciente.ImagenesMedicas %></td>
+    <td><%= paciente.CondicionesEspeciales %></td>
+    <td><%= link_to 'Show', paciente %></td>
+    <td><%= link_to 'Edit', edit_paciente_path(paciente) %></td>
+    <td><%= link_to 'Destroy', paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nuevo Paciente', new_paciente_path %>
+<%= link_to 'New Paciente', new_paciente_path %>

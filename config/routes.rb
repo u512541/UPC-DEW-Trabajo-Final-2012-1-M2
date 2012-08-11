@@ -1,22 +1,39 @@
-UPCDewTrabajoFinal20121M2::Application.routes.draw do
-  
+Veterinaria::Application.routes.draw do
   resources :password_resets
 
   resources :sessions
 
   resources :users
 
+  resources :mains
+  
   match 'logout', to: 'sessions#destroy', as: 'logout'
 
   match 'login', to: 'sessions#new', as: 'login'
 
   match 'signup', to: 'users#new', as: 'signup'
 
- 
- 
-  resources :cliente_pacientes
+  resources :detalleproducto_productos
+
+  resources :factura_detalleproductos
+
+  resources :cliente_facturas
+
+  resources :detalleproductos
+
+  resources :productos
+
+  resources :facturas
+
+  resources :paciente_cita
+
+  resources :cliente_cita
 
   resources :cita
+
+  resources :cliente_pacientes
+
+  resources :paciente_doctors
 
   resources :pacientes
 
@@ -25,6 +42,17 @@ UPCDewTrabajoFinal20121M2::Application.routes.draw do
   resources :prospectos
 
   resources :doctors
+  
+    
+  
+  get "clientes/index"
+  get "doctors/index"
+  get "pacientes/index"
+  get "prospectos/index"
+  get "users/index"
+  get "mains/index"
+  
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -82,4 +110,6 @@ UPCDewTrabajoFinal20121M2::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  root :to => "homes#index"
+  
 end

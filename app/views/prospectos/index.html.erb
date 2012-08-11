@@ -1,4 +1,4 @@
-<h1>Listar Prospectos</h1>
+<h1>Listing prospectos</h1>
 
 <table>
   <tr>
@@ -21,13 +21,13 @@
     <td><%= prospecto.Imagen %></td>
     <td><%= prospecto.Telefono %></td>
     <td><%= prospecto.Celular %></td>
-    <td><%= link_to 'Visualizar', prospecto %></td>
-    <td><%= link_to 'Editar', edit_prospecto_path(prospecto) %></td>
-    <td><%= link_to 'Eliminar', prospecto, confirm: 'Estas tu seguro?', method: :delete %></td>
+    <td><%= link_to 'Show', prospecto %></td>
+    <td><%= link_to 'Edit', edit_prospecto_path(prospecto) %></td>
+    <td><%= link_to 'Destroy', prospecto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nuevo Prospecto', new_prospecto_path %>
+<%= link_to 'New Prospecto', new_prospecto_path %>

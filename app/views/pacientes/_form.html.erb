@@ -44,12 +44,24 @@
     <%= f.text_field :Actividad %>
   </div>
   <div class="field">
-    <%= f.label :Peso %><br />
-    <%= f.text_field :Peso %>
+    <%= f.label :Pesokg %><br />
+    <%= f.text_field :Pesokg %>
   </div>
   <div class="field">
     <%= f.label :FechaNacimiento %><br />
     <%= f.date_select :FechaNacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :NotasMedicas %><br />
+    <%= f.text_area :NotasMedicas %>
+  </div>
+  <div class="field">
+    <%= f.label :ImagenesMedicas %><br />
+    <%= f.text_field :ImagenesMedicas %>
+  </div>
+  <div class="field">
+    <%= f.label :CondicionesEspeciales %><br />
+    <%= f.text_area :CondicionesEspeciales %>
   </div>
   <div class="actions">
     <%= f.submit %>

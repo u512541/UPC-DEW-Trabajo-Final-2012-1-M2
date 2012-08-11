@@ -12,12 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Nombre_y_Apellido %><br />
+    <%= f.label :NombreApellido %><br />
     <%= f.text_field :NombreApellido %>
-  </div>
-  <div class="field">
-    <%= f.label :Administrador %><br />
-    <%= f.text_field :Administrador %>
   </div>
   <div class="field">
     <%= f.label :Email %><br />
@@ -28,8 +24,12 @@
     <%= f.text_field :Telefono %>
   </div>
   <div class="field">
-    <%= f.label :Usuario_del_Sistema %><br />
+    <%= f.label :UsuarioSistema %><br />
     <%= f.text_field :UsuarioSistema %>
+  </div>
+  <div class="field">
+    <%= f.label :Administrador %><br />
+    <%= f.text_field :Administrador %>
   </div>
   <div class="actions">
     <%= f.submit %>

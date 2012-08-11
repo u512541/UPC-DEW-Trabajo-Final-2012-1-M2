@@ -1,12 +1,12 @@
-<h1>Listando Doctores</h1>
+<h1>Listing doctors</h1>
 
 <table>
   <tr>
-    <th>Nombre y Apellido</th>
-    <th>Administrador</th>
+    <th>Nombreapellido</th>
     <th>Email</th>
     <th>Telefono</th>
-    <th>Usuario del Sistema</th>
+    <th>Usuariosistema</th>
+    <th>Administrador</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,17 +15,17 @@
 <% @doctors.each do |doctor| %>
   <tr>
     <td><%= doctor.NombreApellido %></td>
-    <td><%= doctor.Administrador %></td>
     <td><%= doctor.Email %></td>
     <td><%= doctor.Telefono %></td>
     <td><%= doctor.UsuarioSistema %></td>
-    <td><%= link_to 'Visualizar', doctor %></td>
-    <td><%= link_to 'Editar', edit_doctor_path(doctor) %></td>
-    <td><%= link_to 'Eliminar', doctor, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= doctor.Administrador %></td>
+    <td><%= link_to 'Show', doctor %></td>
+    <td><%= link_to 'Edit', edit_doctor_path(doctor) %></td>
+    <td><%= link_to 'Destroy', doctor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nuevo Doctor', new_doctor_path %>
+<%= link_to 'New Doctor', new_doctor_path %>

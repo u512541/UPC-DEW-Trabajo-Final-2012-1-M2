@@ -7,7 +7,8 @@
     <th>Dueno</th>
     <th>Telefono</th>
     <th>Direccion</th>
-    <th>Fecha Registro</th>
+    <th>Fecharegistro</th>
+    <th>Citatarea</th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,9 +22,10 @@
     <td><%= citum.Telefono %></td>
     <td><%= citum.Direccion %></td>
     <td><%= citum.FechaRegistro %></td>
+    <td><%= citum.CitaTarea %></td>
     <td><%= link_to 'Show', citum %></td>
     <td><%= link_to 'Edit', edit_citum_path(citum) %></td>
-    <td><%= link_to 'Destroy', citum, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Destroy', citum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

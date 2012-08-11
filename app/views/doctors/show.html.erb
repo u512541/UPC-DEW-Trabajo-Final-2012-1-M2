@@ -1,13 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Nombre y Apellido:</b>
+  <b>Nombreapellido:</b>
   <%= @doctor.NombreApellido %>
-</p>
-
-<p>
-  <b>Administrador:</b>
-  <%= @doctor.Administrador %>
 </p>
 
 <p>
@@ -21,10 +16,15 @@
 </p>
 
 <p>
-  <b>Usuario de Sistema:</b>
+  <b>Usuariosistema:</b>
   <%= @doctor.UsuarioSistema %>
 </p>
 
+<p>
+  <b>Administrador:</b>
+  <%= @doctor.Administrador %>
+</p>
 
-<%= link_to 'Editar', edit_doctor_path(@doctor) %> |
-<%= link_to 'Retroceder', doctors_path %>
+
+<%= link_to 'Edit', edit_doctor_path(@doctor) %> |
+<%= link_to 'Back', doctors_path %>

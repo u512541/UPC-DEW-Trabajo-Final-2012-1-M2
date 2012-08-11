@@ -26,6 +26,8 @@ class DoctorsController < ApplicationController
   def new
     @doctor = Doctor.new
 
+	@administrador = [['Si', 'Si'], ['No', 'No']]
+	
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @doctor }
