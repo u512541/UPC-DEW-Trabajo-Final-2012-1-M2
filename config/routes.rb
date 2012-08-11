@@ -51,6 +51,7 @@ Veterinaria::Application.routes.draw do
   get "prospectos/index"
   get "users/index"
   get "mains/index"
+  get "cita/index"
   
   
 

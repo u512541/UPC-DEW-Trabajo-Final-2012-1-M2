@@ -1,4 +1,4 @@
-<h1>Listing pacientes</h1>
+<h1>Listado de pacientes</h1>
 
 <table>
   <tr>
@@ -35,9 +35,9 @@
     <td><%= paciente.NotasMedicas %></td>
     <td><%= paciente.ImagenesMedicas %></td>
     <td><%= paciente.CondicionesEspeciales %></td>
-    <td><%= link_to 'Show', paciente %></td>
-    <td><%= link_to 'Edit', edit_paciente_path(paciente) %></td>
-    <td><%= link_to 'Destroy', paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Visulizar', paciente %></td>
+    <td><%= link_to 'Editar', edit_paciente_path(paciente) %></td>
+    <td><%= link_to 'Eliminar', paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
